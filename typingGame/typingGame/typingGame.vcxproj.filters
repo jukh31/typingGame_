@@ -18,40 +18,16 @@
     <ClCompile Include="main.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="Initialize.cpp">
+    <ClCompile Include="LEVEL.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="GenerateBonus.cpp">
+    <ClCompile Include="Generate.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="InitScreen.cpp">
+    <ClCompile Include="Initial.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="PrintBonus.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="PrintoutPut.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="Check_Calculate.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="Lvup.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="LEVEL_UP.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="PrintResult.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="IsVictory.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="IsDead.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="GenerateAnswer.cpp">
+    <ClCompile Include="CheckCondition.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>
@@ -63,6 +39,18 @@
       <Filter>헤더 파일</Filter>
     </ClInclude>
     <ClInclude Include="main.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="LEVEL.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Generate.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Initial.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="CheckCondition.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
   </ItemGroup>

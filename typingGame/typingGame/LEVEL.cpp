@@ -1,5 +1,6 @@
 #include "main.h"
-void LEVEL_UP(Data* data)
+
+void LEVEL::LEVEL_UP(Data* data)
 {
 	if (data->lv == LV_1 && data->Exp >= 3)
 		Lvup(data);
@@ -11,4 +12,10 @@ void LEVEL_UP(Data* data)
 		Lvup(data);
 	else if (data->lv == LV_5 && data->Exp >= 15)
 		Lvup(data);
+}
+
+void LEVEL::Lvup(Data* data)
+{
+	data->lv++;
+	data->i = 0;
 }

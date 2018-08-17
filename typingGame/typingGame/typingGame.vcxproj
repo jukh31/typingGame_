@@ -139,22 +139,18 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="Check_Calculate.cpp" />
-    <ClCompile Include="GenerateAnswer.cpp" />
-    <ClCompile Include="GenerateBonus.cpp" />
-    <ClCompile Include="Initialize.cpp" />
-    <ClCompile Include="InitScreen.cpp" />
-    <ClCompile Include="IsDead.cpp" />
-    <ClCompile Include="IsVictory.cpp" />
-    <ClCompile Include="LEVEL_UP.cpp" />
-    <ClCompile Include="Lvup.cpp" />
+    <ClCompile Include="CheckCondition.cpp" />
+    <ClCompile Include="Generate.cpp" />
+    <ClCompile Include="Initial.cpp" />
+    <ClCompile Include="LEVEL.cpp" />
     <ClCompile Include="main.cpp" />
-    <ClCompile Include="PrintBonus.cpp" />
-    <ClCompile Include="PrintoutPut.cpp" />
-    <ClCompile Include="PrintResult.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="CheckCondition.h" />
     <ClInclude Include="Data.h" />
+    <ClInclude Include="Generate.h" />
+    <ClInclude Include="Initial.h" />
+    <ClInclude Include="LEVEL.h" />
     <ClInclude Include="main.h" />
     <ClInclude Include="WordLV.h" />
   </ItemGroup>

@@ -4,23 +4,23 @@ int main()
 {
 	Data data;
 	WordLV wordLV;
-	Initialize(&data);
-	char input;
-	InitScreen();
+	LEVEL level;
+	Generate generate;
+	Initial initial;
+	CheckCondition checkCD;
+	initial.Initialize(&data);
+	initial.InitScreen();
 	
 	while (1)
 	{
 		
 		
-		GenerateBonus(&data);
-		PrintBonus(&data);
-		GenerateAnswer(&data, &wordLV);
+		generate.GenerateBonus(&data);
+		generate.GenerateAnswer(&data, &wordLV);
 		cin >> data.answer;
-		Check_Calculate(&data);
-		LEVEL_UP(&data);
-		IsVictory(&data);
-		IsDead(&data);
-		PrintResult(&data);
+		checkCD.Check_Calculate(&data);
+		level.LEVEL_UP(&data);
+		checkCD.IsVictory(&data);
 		
 
 	}

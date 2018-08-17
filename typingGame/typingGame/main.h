@@ -4,6 +4,10 @@
 #include <time.h>
 #include "Data.h"
 #include "WordLV.h"
+#include "LEVEL.h"
+#include "Generate.h"
+#include "Initial.h"
+#include "CheckCondition.h"
 
 
 
@@ -25,17 +29,13 @@ using namespace std;
 #define LV_5 5
 
 void Initialize(Data* data);
-void GenerateBonus(Data* data);
 void InitScreen();
-void PrintBonus(Data* data);
 void PrintoutPut(Data*data);
 void Check_Calculate(Data* data);
-void Lvup(Data* data);
-void LEVEL_UP(Data* data);
+
 void PrintResult(Data* data);
 void IsVictory(Data* data);
 void IsDead(Data* data);
-void GenerateAnswer(Data* data, WordLV* wordLV);
 
 
 
