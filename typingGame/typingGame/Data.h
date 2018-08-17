@@ -2,10 +2,9 @@
 class Data
 {public:
 	int lv;
-	int i ;
+	int i;
 	int Exp;
 	int life;
-	int comp;
 	int bonus;
 	int bExp;
 	int blife;
