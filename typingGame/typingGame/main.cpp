@@ -89,10 +89,54 @@ void Check_Calculate(Data* data)
 		data->life--;
 	}
 }
+void Lvup(Data* data)
+{
+	data->lv++;
+	data->i = 0;
+}
+void LEVEL_UP(Data* data)
+{
+	if (data->lv == LV_1 && data->Exp >= 3)
+		Lvup(data);
+	else if (data->lv == LV_2 && data->Exp >= 6)
+		Lvup(data);
+	else if (data->lv == LV_3 && data->Exp >= 9)
+		Lvup(data);
+	else if (data->lv == LV_4 && data->Exp >= 12)
+		Lvup(data);
+	else if (data->lv == LV_5 && data->Exp >= 15)
+		Lvup(data);
+}
+void PrintResult(Data* data)
+{
+	cout << "lv" << data->lv << endl;
+	cout << "exp" << data->Exp << endl;
+	cout << "life" << data->life << endl;
+	cout << endl << endl << endl << endl;
+}
+void IsVictory(Data* data)
+{
+	if (data->lv == 6)
+	{
+		cout << "승리" << endl;
+		exit(1);
+	}
+}
+void IsDead(Data* data)
+{
+	if (data->life == 0)
+	{
+		cout << "패배" << endl;
+		exit(1);
+	}
+}
+
+
+
+
 
 int main()
 {
-	int i = Init;
 	Data data;
 	Initialize(&data);
 	const char wordLV1[LV][32] =
@@ -135,26 +179,23 @@ int main()
 		//보너스 생성 
 		
 		GenerateBonus(&data);
+		PrintBonus(&data);
+
 
 		//일반문제 단어 출력 및 입력(레벨 확인)
 		if (data.lv == LV_1)
 		{
-			PrintBonus(&data);
 			strcpy(data.outPut, wordLV1[data.i]);
 			PrintoutPut(&data);
 		}
 		else if (data.lv == LV_2)
 		{
-			PrintBonus(&data);
-
 			strcpy(data.outPut, wordLV2[data.i]);
 			PrintoutPut(&data);
-
-
 		}
 		else if (data.lv == LV_3)
 		{
-			PrintBonus(&data);
+			
 			strcpy(data.outPut, wordLV3[data.i]);
 			PrintoutPut(&data);
 
@@ -162,7 +203,7 @@ int main()
 
 		else if (data.lv == LV_4)
 		{
-			PrintBonus(&data);
+			
 			strcpy(data.outPut, wordLV4[data.i]);
 			PrintoutPut(&data);
 
@@ -170,73 +211,23 @@ int main()
 
 		else if (data.lv == LV_5)
 		{
-			PrintBonus(&data);
-			strcpy(data.outPut, wordLV4[data.i]);
+			
+			strcpy(data.outPut, wordLV5[data.i]);
 			PrintoutPut(&data);
 
 		}
 		//정답 입력
 		cin >> data.answer;
-
 		//정답 여부 판별후 정산
 		Check_Calculate(&data);
-
-
-
 		//레벨업 가능 판별 후 가능이면 레벨업
-		if (data.lv == LV_1 && data.Exp >= 3)
-		{
-			data.lv++;
-			data.i = 0;
-
-		}
-
-		else if (data.lv == LV_2 && data.Exp >= 6)
-		{
-			data.lv++;
-			data.i = 0;
-
-
-		}
-		else if (data.lv == LV_3 && data.Exp >= 9)
-		{
-			data.lv++;
-			data.i = 0;
-
-
-		}
-		else if (data.lv == LV_4 && data.Exp >= 12)
-		{
-			data.lv++;
-			data.i = 0;
-
-
-		}
-		else if (data.lv == LV_5 && data.Exp >= 15)
-		{
-			data.lv++;
-			data.i = 0;
-
-		}
+		LEVEL_UP(&data);
 		// 승리 여부
-		if (data.lv == 6)
-		{
-			cout << "승리" << endl;
-			return 1;
-		}
-
+		IsVictory(&data);
 		//라이프 없음 죽음
-		if (data.life == 0)
-		{
-			cout << "패패" << endl;
-			exit(1);
-		}
-
+		IsDead(&data);
 		//결과 출력
-		cout << "lv" << data.lv << endl;
-		cout << "exp" << data.Exp << endl;
-		cout << "life" << data.life << endl;
-		cout << endl << endl << endl << endl;
+		PrintResult(&data);
 		//반복 끝
 
 	}
