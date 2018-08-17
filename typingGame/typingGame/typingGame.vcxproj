@@ -139,10 +139,24 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Check_Calculate.cpp" />
+    <ClCompile Include="GenerateAnswer.cpp" />
+    <ClCompile Include="GenerateBonus.cpp" />
+    <ClCompile Include="Initialize.cpp" />
+    <ClCompile Include="InitScreen.cpp" />
+    <ClCompile Include="IsDead.cpp" />
+    <ClCompile Include="IsVictory.cpp" />
+    <ClCompile Include="LEVEL_UP.cpp" />
+    <ClCompile Include="Lvup.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="PrintBonus.cpp" />
+    <ClCompile Include="PrintoutPut.cpp" />
+    <ClCompile Include="PrintResult.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Data.h" />
+    <ClInclude Include="main.h" />
+    <ClInclude Include="WordLV.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
