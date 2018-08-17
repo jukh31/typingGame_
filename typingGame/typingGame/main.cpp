@@ -7,11 +7,11 @@ int main()
 	Initialize(&data);
 	char input;
 	InitScreen();
-	
+	firstscreen();
+	LevelUpScreen();
+	finish();
 	while (1)
 	{
-		
-		
 		GenerateBonus(&data);
 		PrintBonus(&data);
 		GenerateAnswer(&data, &wordLV);

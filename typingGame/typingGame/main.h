@@ -38,6 +38,9 @@ void IsDead(Data* data);
 void GenerateAnswer(Data* data, WordLV* wordLV);
 
 
+void firstscreen();
+void LevelUpScreen();
+void finish();
 
 
 
