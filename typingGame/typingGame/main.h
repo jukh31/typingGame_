@@ -28,14 +28,7 @@ using namespace std;
 #define LV_4 4
 #define LV_5 5
 
-void Initialize(Data* data);
-void InitScreen();
-void PrintoutPut(Data*data);
-void Check_Calculate(Data* data);
 
-void PrintResult(Data* data);
-void IsVictory(Data* data);
-void IsDead(Data* data);
 
 
 
