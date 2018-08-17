@@ -2,6 +2,7 @@
 #include <stdlib.h>
 #include <time.h>
 #include "Data.h"
+#include "Wordlv.h"
 using namespace std;
 #define LV 20
 #define Init 0
@@ -138,84 +139,41 @@ void IsDead(Data* data)
 int main()
 {
 	Data data;
-	Initialize(&data);
-	const char wordLV1[LV][32] =
-	{
-		"가가","가나","가다","가라","가마","가바","가아","가자"
-	};
-	const char wordLV2[LV][32] =
-	{
-		"나가","나나","나다","나라","나마","나바","나아","나자"
-	};
-	const char wordLV3[LV][32] =
-	{
-		"다가","다나","다다","다라","다마","다바","다아","다자"
-
-	};
-	const char wordLV4[LV][32] =
-	{
-		"라가","라나","라다","라라","라마","라바","라아","라자"
-
-	};
-	const char wordLV5[LV][32] =
-	{
-		"마가","마나","마다","마라","마마","마바","마아","마자"
-
-	};
-
-	
-
+	WordLV wordlv;
 	char input;
-
 	// 초기 설정
-	
-
-
+	Initialize(&data);
 	// 초기 화면
 	InitScreen();
 	//반복
 	while (1)
 	{
 		//보너스 생성 
-		
 		GenerateBonus(&data);
 		PrintBonus(&data);
-
 
 		//일반문제 단어 출력 및 입력(레벨 확인)
 		if (data.lv == LV_1)
 		{
-			strcpy(data.outPut, wordLV1[data.i]);
-			PrintoutPut(&data);
+			strcpy(data.outPut, wordlv.wordLV1[data.i]);
 		}
 		else if (data.lv == LV_2)
 		{
-			strcpy(data.outPut, wordLV2[data.i]);
-			PrintoutPut(&data);
+			strcpy(data.outPut, wordlv.wordLV2[data.i]);
 		}
 		else if (data.lv == LV_3)
 		{
-			
-			strcpy(data.outPut, wordLV3[data.i]);
-			PrintoutPut(&data);
-
+			strcpy(data.outPut, wordlv.wordLV3[data.i]);
 		}
-
 		else if (data.lv == LV_4)
 		{
-			
-			strcpy(data.outPut, wordLV4[data.i]);
-			PrintoutPut(&data);
-
+			strcpy(data.outPut, wordlv.wordLV4[data.i]);
 		}
-
 		else if (data.lv == LV_5)
 		{
-			
-			strcpy(data.outPut, wordLV5[data.i]);
-			PrintoutPut(&data);
-
+			strcpy(data.outPut, wordlv.wordLV5[data.i]);
 		}
+		PrintoutPut(&data);
 		//정답 입력
 		cin >> data.answer;
 		//정답 여부 판별후 정산
