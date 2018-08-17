@@ -1,6 +1,6 @@
 #pragma once
-struct Data
-{
+class Data
+{public:
 	int lv;
 	int i ;
 	int Exp;

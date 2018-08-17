@@ -1,8 +1,9 @@
 #pragma once
 #include "main.h"
 #define LV 20
-struct WordLV
+class WordLV
 {
+public:
 	const char wordLV1[LV][32] =
 	{
 		"나라", "국가", "날림", "엄마", "그림", "파리", "모기", "사과", "잔디", "즈문", "자귀", "은솔", "안녕", "그만", "이제", "뿜뿜", "나연", "모래", "건혁", "아재"

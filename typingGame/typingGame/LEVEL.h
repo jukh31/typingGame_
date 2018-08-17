@@ -1,6 +1,7 @@
 #pragma once
-struct LEVEL
+class LEVEL
 {
+public:
 	void LEVEL_UP(Data* data);
 	void Lvup(Data* data);
 

@@ -1,6 +1,7 @@
 #pragma once
-struct Initial
+class Initial
 {
+public:
 	void Initialize(Data* data);
 	void InitScreen();
 

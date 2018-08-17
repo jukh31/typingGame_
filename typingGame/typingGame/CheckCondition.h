@@ -1,6 +1,8 @@
 #pragma once
-struct CheckCondition
+class CheckCondition
 {
+public:
+
 	void Check_Calculate(Data* data);
 	void IsDead(Data* data);
 	void IsVictory(Data* data);
