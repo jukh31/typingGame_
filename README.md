@@ -3,6 +3,7 @@
 <hr>
 
 
+   ![images](https://user-images.githubusercontent.com/42165321/44314899-3bf8b600-a459-11e8-9d63-b93adce7bf40.jpg)
 
 
 1.  처음 프로그램을 동작 시키면 LV 1로 시작하게 됨<br>
