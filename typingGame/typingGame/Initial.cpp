@@ -8,7 +8,6 @@ void Initial::Initialize(Data* data)
 	data->i = Init;
 	data->Exp = Init;
 	data->life = Life;
-	data->comp = Init;
 	data->bonus = Init;
 	data->bExp = Init;
 	data->blife = Init;
