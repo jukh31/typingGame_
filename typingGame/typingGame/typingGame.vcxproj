@@ -144,6 +144,7 @@
     <ClCompile Include="Initial.cpp" />
     <ClCompile Include="LEVEL.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="timer.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="CheckCondition.h" />

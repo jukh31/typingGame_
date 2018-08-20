@@ -1,7 +1,9 @@
 #include <iostream>
 #include "main.h"
+
 int main()
 {
+	timer();
 	Data data;
 	WordLV wordLV;
 	LEVEL level;
@@ -13,16 +15,12 @@ int main()
 	
 	while (1)
 	{
-		
-		
 		generate.GenerateBonus(&data);
 		generate.GenerateAnswer(&data, &wordLV);
 		cin >> data.answer;
 		checkCD.Check_Calculate(&data);
 		level.LEVEL_UP(&data);
 		checkCD.IsVictory(&data);
-		
-
 	}
 	return 0;
 }

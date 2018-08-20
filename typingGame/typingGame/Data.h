@@ -8,6 +8,7 @@ class Data
 	int bonus;
 	int bExp;
 	int blife;
+	int comp;
 	char answer[64] = {};
 	char outPut[64] = {};
 };

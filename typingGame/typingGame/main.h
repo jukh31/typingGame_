@@ -28,10 +28,7 @@ using namespace std;
 #define LV_4 4
 #define LV_5 5
 
-
-
-
-
+void timer();
 
 
 
